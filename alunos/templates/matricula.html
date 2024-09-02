@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Matrícula do aluno</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            {{ form }}
+            <br>
+            <button type="submit">Cadastro</button>
+        </div>
+    </form>
+</body>
+<style>
+    h2{
+        text-align: center;
+    }
+    div{
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        width: 100px;
+        background-color: cornflowerblue;
+        color: white;
+        border: none;
+        padding: 2px;
+    }
+</style>
+</html>

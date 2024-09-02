@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alunos</h1>
+    {% for aluno in alunos %}
+        <div>
+            <p>Nome: {{ aluno.nome }}</p>
+            <p>Email: {{ aluno.email }}</p>
+            <p>Cidade: {{ aluno.cidade }}</p>
+            <p>Endereço: {{ aluno.endereco }}</p>
+            <p>Curso:{{ aluno.curso }}</p>
+        </div>
+    {% endfor %}
+</body>
+<style>
+    h1{
+        text-align: center;
+    }
+    body div{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 10px;
+        width: 270px;
+    }
+</style>
+</html>
